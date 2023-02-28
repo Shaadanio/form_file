@@ -19,7 +19,7 @@ function send_form_block(){
         $data = base64_decode($base[1]);
         $f = finfo_open();
         $mime_type = finfo_buffer($f, $data, FILEINFO_MIME_TYPE);
-		$path = $_SERVER['DOCUMENT_ROOT'] . "/wp-content/uploads/temp/$file->name";
+		$path = $_SERVER['DOCUMENT_ROOT'] . "/wp-content/uploads/temp/$file->name"; // создать папку temp в uploads
 		file_put_contents($path, $data);
 
 
