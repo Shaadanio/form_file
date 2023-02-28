@@ -42,7 +42,7 @@ function send_form_block(){
     };
 
 	
-    $to = get_field( 'get_mail', 'option' );
+    $to = get_field( 'get_mail', 'option' ); // берём e-mail куда слать из поля
     $subject = 'Заполнение формы на сайте';
     $message = '
     <html>
@@ -60,7 +60,7 @@ function send_form_block(){
     ';
 
     $headers = array(
-        'From: >Заполнение формы на сайте <wordpress@landing.zakazat-sait.xyz>',
+        'From: >Заполнение формы на сайте <указать e-mail отправки>', // заменить
         'content-type: text/html',
     );
 
