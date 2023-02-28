@@ -1,8 +1,5 @@
 jQuery(document).ready(function() {
 
-
-
-
     function readURL(input) {
         for(let i = 0; i < input.files.length; i++ ){
             let file = input.files[i];
@@ -81,6 +78,5 @@ jQuery(document).ready(function() {
     });
 
 
-    
 });
 

@@ -33,8 +33,7 @@
 
         <button type="submit">Send</button>
 
-    </div>
-                       
+    </div>        
 
     <input type="hidden" name="action" value="send_form_block">
     <?php wp_nonce_field('_send_form_wpnonce', '_send_form_wpnonce'); ?>
