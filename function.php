@@ -20,9 +20,7 @@ function send_form_block(){
         $f = finfo_open();
         $mime_type = finfo_buffer($f, $data, FILEINFO_MIME_TYPE);
 		$path = $_SERVER['DOCUMENT_ROOT'] . "/wp-content/uploads/temp/$file->name"; // создать папку temp в uploads
-        if(!is_dir($path)) {
-            mkdir($path, 0777, true);
-        }
+   
 		file_put_contents($path, $data);
 
 
